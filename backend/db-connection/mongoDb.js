@@ -8,10 +8,7 @@ class Mongo {
 
   createMongoConnection() {
     mongoose.connect(
-      //`mongodb://10.0.5.193:27017/funduSocial`
-      // `mongodb+srv://funduSocial:SpxDaz3xgvxlCnhE@fundusocial.bfqmivh.mongodb.net/funduSocial`
-      `mongodb+srv://fundu_data:0bVU92cXNcoX0DIk@fundusocial.bfqmivh.mongodb.net/funduSocial`
-      // "mongodb://localhost:27017/funduprod"
+      process.env.MONGO_URL,
     );
 
     mongoose.connection.once("open", () => {
