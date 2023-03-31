@@ -71,7 +71,7 @@ const Capsules = () => {
 
         {/* Search */}
         <div className="flex justify-center w-full">
-          <div className="flex rounded-md shadow-sm gap-5 mb-5">
+          <div className="rounded-md shadow-sm gap-5 mb-5 md:flex">
             <input
               type="text"
               className="py-2 px-3 pr-11 block w-sm border-gray-200 shadow-sm rounded text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
@@ -79,7 +79,7 @@ const Capsules = () => {
               value={searchStatusValue}
               onChange={(e) => setSearchStatusValue(e.target.value)}
             />
-
+            <br />
             <input
               type="text"
               className="py-2 px-3 pr-11 block w-sm border-gray-200 shadow-sm rounded text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
@@ -88,6 +88,8 @@ const Capsules = () => {
               onChange={(e) => setSearchOriginalLaunchValue(e.target.value)}
             />
 
+            <br />
+
             <input
               type="text"
               className="py-2 px-3 pr-11 block w-sm border-gray-200 shadow-sm rounded text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
@@ -95,6 +97,8 @@ const Capsules = () => {
               value={searchTypeValue}
               onChange={(e) => setSearchTypeValue(e.target.value)}
             />
+
+            <br />
             <button
               type="button"
               className="py-[.688rem] px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-blue-500 hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500"
